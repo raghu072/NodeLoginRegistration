@@ -25,8 +25,6 @@ router.post('/register', parser, function(req, res, next) {
     var emailForm = req.body.email;
     var passwordForm = req.body.password;
     var password2Form = req.body.password2;
-
-    console.log(nameForm);
 });
 
 module.exports = router;

@@ -16,11 +16,11 @@ var passportLocal = require('passport-local').Strategy;
 var bcryptjs = require('bcryptjs');
 var hbs = require('express-handlebars');
 
-// mongoose.connect('mongodb://localhost/loginapp');
-// var promise = mongoose.connect('mongodb://localhost/loginapp', {
-//     useMongoClient: true
-// });
-// var dbConnection = mongoose.connection;
+mongoose.connect('mongodb://localhost/loginapp');
+var promise = mongoose.connect('mongodb://localhost/loginapp', {
+    useMongoClient: true
+});
+var dbConnection = mongoose.connection;
 
 var index = require('./routes/index');
 var users = require('./routes/users');
